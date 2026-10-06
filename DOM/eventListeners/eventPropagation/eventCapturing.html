@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        div, p, a {
+            padding: 15px 30px;
+            display: block;
+            border: 2px solid rgb(80, 189, 223);
+            background: rgb(168, 12, 12);
+        }
+        </style>
+</head>
+<body>
+    <div id="mydiv">
+        Div Tag
+        <p class="par">
+            Para tag
+            <a href="https://www.bbc.com">Anchor Tag</a>
+        </p>
+        </div>
+
+    <script>
+        function showTag() {
+            alert(`Capsuring Element :::: ${this.tagName}`);
+        }
+        let elements = document.querySelectorAll('div, p, a');
+        for(let element of elements){
+            element.addEventListener('click' , showTag , true);
+        }
+    </script>
+</body>
+</html>

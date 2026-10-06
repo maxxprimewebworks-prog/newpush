@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="input" id="myInput" placeholder="Enter a name">
+    <a href="https://www.bbc.com" target="_blank" download="true">BBC</a>
+    <script>
+        let inpEle = document.getElementById('myInput');
+        let placeholdervalue = inpEle.getAttribute('placeholder');
+        console.log(placeholdervalue);  //Enter a name
+
+        //Getting an anchor element
+        let anc = document.getElementsByTagName('a');
+        let anchref = anc[0].getAttribute('href');
+        console.log(anchref);
+    </script>
+</body>
+</html>

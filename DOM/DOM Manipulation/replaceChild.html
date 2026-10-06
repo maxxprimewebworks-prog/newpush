@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Lorem ipsum dolor sit amet.</h1>
+        <p id="hint">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Hic alias eveniet eius at reprehenderit quasi.</p>
+        <a href="#" id="anc">Click Me</a>
+    </div>
+    <script>
+        ///Replacing anchor tag with image
+        let mainDiv = document.querySelector('#main');
+        let childele = document.querySelector('#hint');
+
+
+        let anc = document.querySelector('#anc');
+        let img = document.createElement('img');
+        img.src = 'egg.jpeg';
+        img.height = 200;
+        img.width = 200;
+       
+        mainDiv.replaceChild(img, anc);
+
+
+
+
+
+        // let mydiv = document.querySelector('div');
+        // mydiv.classList = ['one' , 'two'];
+        // let divtext = document.createTextNode('hello World');
+        // mydiv.appendChild(divtext);
+        // mainDiv.replaceChild(mydiv, childele);
+    </script>
+</body>
+</html>

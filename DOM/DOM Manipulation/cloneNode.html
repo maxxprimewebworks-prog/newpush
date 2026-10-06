@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+        
+    </ul>
+    <script>
+        let ulMenu = document.querySelector('#menu');
+        let newul = ulMenu.cloneNode(true);
+        newul.id = 'menu-app';
+        
+        let run = document.createElement('li');
+        run.innerText = 'Log in';
+        newul.appendChild(run);
+         
+        let run2 = document.createElement('li');
+        run2.innerText = 'Register';
+        newul.appendChild(run2);
+        document.body.appendChild(newul);
+    </script>
+</body>
+</html>

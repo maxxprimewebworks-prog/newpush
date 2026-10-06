@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <div>Lorem, ipsum.</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <script>
+        let myDivs = document.getElementsByTagName('div');
+        console.log(myDivs);
+        console.log(myDivs[0]);
+        myDivs[0].innerText = 'Hello JS';
+        myDivs[2].innerText = '<p>Hello JS Class</p>';
+    </script>
+</body>
+</html>

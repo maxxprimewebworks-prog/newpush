@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+    <a>BBC</a>
+
+    <script>
+        let inpele = document.getElementById('myInput');//getting element by id
+        inpele.setAttribute('placeholder' , 'Enter a name');// adding placeholder attribute
+        inpele.setAttribute('type' , 'password');
+        inpele.removeAttribute('type');
+
+        //Getting an anchor tag
+        let anc = document.getElementsByTagName('a');
+        anc[0].setAttribute('href' , 'https://www.bbc.com');
+        anc[0].setAttribute('target' , '_blank');
+        anc[0].setAttribute('download' , '');
+        anc[0].setAttribute('download');
+    </script>
+</body>
+</html>

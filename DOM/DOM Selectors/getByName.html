@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'myDiv'>
+        <div name="myDiv"></div>
+        <div class="div"></div>
+        <div name="myDiv"></div>
+        <div class="div"></div>
+        <div name="myDiv"></div>
+    </div>
+    <script>
+        let myDivs = document.getElementsByName('myDiv');
+        console.log(myDivs.entries());
+        console.log(myDivs.entries().next());
+        console.log(myDivs.entries().next());
+        console.log(myDivs.entries().next().value);
+
+        myDivs.forEach((val,key) => {
+            console.log(`${val.innerText} ${key}`);
+        })
+    </script>
+</body>
+</html>

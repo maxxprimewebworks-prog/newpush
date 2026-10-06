@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Trending Movies & TV Shows</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-black text-white">
+
+  <!-- NAVBAR -->
+  <nav class="flex h-16 items-center justify-between bg-black px-8 md:px-12">
+    <h1 class="text-2xl font-extrabold tracking-tight text-red-600">
+      MOVIEFLIX
+    </h1>
+
+    <div class="flex items-center gap-6 text-sm text-gray-300">
+      <a href="#" class="text-white hover:text-red-500">Home</a>
+      <a href="#" class="hover:text-white">Trending</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden bg-gradient-to-r from-black via-zinc-900 to-black px-8 py-20 md:px-12">
+
+    <div class="max-w-3xl">
+      <p class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-red-600">
+        TMDB API
+      </p>
+
+      <h2 class="mb-5 text-4xl font-extrabold leading-tight md:text-6xl">
+        Trending Movies & TV Shows
+      </h2>
+
+      <p class="max-w-2xl text-base leading-7 text-gray-400 md:text-lg">
+        Explore movies and television shows currently trending around the world,
+        powered by The Movie Database API.
+      </p>
+    </div>
+
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+  <main class="px-8 py-10 md:px-12">
+
+    <!-- SECTION TITLE -->
+    <div class="mb-8 flex items-end justify-between">
+      <div>
+        <p class="mb-1 text-xs font-bold uppercase tracking-widest text-red-600">
+          Today
+        </p>
+
+        <h2 class="text-3xl font-bold">
+          Trending Now
+        </h2>
+      </div>
+
+      <p id="movie-count" class="text-sm text-gray-500">
+        Loading...
+      </p>
+    </div>
+
+
+    <!-- LOADING STATE -->
+    <div id="loading" class="flex min-h-64 items-center justify-center">
+      <div class="text-center">
+        <div class="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-4 border-gray-700 border-t-red-600"></div>
+
+        <p class="text-gray-400">
+          Loading trending titles...
+        </p>
+      </div>
+    </div>
+
+
+    <!-- ERROR STATE -->
+    <div id="error"
+      class="hidden rounded-lg border border-red-900 bg-red-950/30 p-8 text-center">
+
+      <h2 class="mb-2 text-xl font-bold">
+        Something went wrong
+      </h2>
+
+      <p id="error-message" class="mb-5 text-sm text-gray-400"></p>
+
+      <button
+        id="retry-button"
+        class="rounded bg-red-600 px-5 py-2 text-sm font-bold transition hover:bg-red-700">
+        Try Again
+      </button>
+
+    </div>
+
+
+    <!-- MOVIE GRID -->
+    <section
+      id="movie-container"
+      class="hidden grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-800 px-8 py-8 text-center text-xs text-gray-600">
+    This product uses the TMDB API but is not endorsed or certified by TMDB.
+  </footer>
+
+
+
+  <script src="project.js"></script>
+
+</body>
+</html>

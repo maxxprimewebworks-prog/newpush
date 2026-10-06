@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        select{
+            width: 100px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <select id="countrySelect"></select>
+<script>
+    const countries = ["Nigeria", "Ghana", "Canada", "Germany", "Japan"];
+    const select = document.getElementById("countrySelect");
+
+    for (let i = 0; i < countries.length; i++)  {
+        const option = document.createElement("option");
+        option.textContent =countries[i];
+        select.appendChild(option);
+    }
+</script>
+</body>
+</html>

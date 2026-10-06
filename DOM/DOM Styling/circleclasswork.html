@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const circle = document.createElement('div');
+        circle.style.width = '330px';
+        circle.style.height = '330px';
+        circle.style.borderRadius = '50%';
+        circle.style.position = 'fixed';
+        circle.style.top = '50%';
+        circle.style.left = '50%';
+        
+        circle.style.transform = 'translate(-50% , -50%)';
+
+
+        circle.style.boxShadow =
+         '20px 30px 50px'
+
+         const image = document.createElement('img');
+         image.src = 'egg.jpeg'
+         image.style.width = '100%';
+         image.style.height = '100%';
+         image.style.objectFit = 'cover';
+image.style.borderRadius = '50%';
+         circle.appendChild(image);
+        document.body.appendChild(circle)
+
+    </script>
+</body>
+</html>

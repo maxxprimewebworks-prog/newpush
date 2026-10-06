@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let myDiv = document.createElement('div');
+        myDiv.id = 'divId';
+        myDiv.className = 'divClass ';
+        myDiv.className += 'user-app';
+        myDiv.innerText = '<h1>Just me uce</h1>';
+        myDiv.innerHTML = '<h1>Just you uce</h1>';
+        document.body.appendChild(myDiv);
+        console.log(myDiv);
+    </script>
+</body>
+</html>

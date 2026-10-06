@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+
+    <script>
+        let maindiv = document.querySelector('#mydiv');
+        maindiv.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+        maindiv.insertAdjacentHTML('afterbegin', '<p>Hello2</p>');
+        maindiv.insertAdjacentHTML('beforeend', '<p>Hello3</p>');
+        maindiv.insertAdjacentHTML('afterend', "<p style='color:red'>Hello</p>");
+    </script>
+</body>
+</html>

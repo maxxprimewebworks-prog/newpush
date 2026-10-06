@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #numbers {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="generateButton">Generate Random Numbers</button>
+    <div id="numbers"></div>
+    <script>
+        const generateButton = document.getElementById('generateButton');
+        const numbersDisplay = document.getElementById('numbers');
+        generateButton.addEventListener('click', () => {
+            const numbers = [];
+            for (let i = 0; i < 5; i++) {
+                const number = Math.floor(Math.random() * 100) + 1;
+                numbers.push(number);
+            }
+            numbersDisplay.textContent = numbers.join(', ');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+    <div class="myClass"> Nigeria</div>
+    <div class="myClass"> Tokyo</div>
+    <div class="myClass"> Hello</div>
+    <div class="myClass">Maths</div>
+    <div class="myClass">Eyes</div>
+    </div>
+    <script>
+        let myDivs = document.getElementsByClassName('myClass');
+        console.log(myDivs);
+        console.log('Item 2' , myDivs.item(2));
+        console.log('Index 3' , myDivs.item(3));
+
+
+        for (let index = 0; index < myDivs.length; index++)  {
+            const element = myDivs[index];
+            console.log(index, element);
+        }
+    </script>
+</body>
+</html>

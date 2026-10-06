@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let ball = new Array();
+ball.push('Chelsea', 'Arsenal', 'Newcastle', 'Barcelona', 'Real Madrid', 'Man Utd', 'Man City');
+
+ball.map((ball)=> {
+    console.log(ball.toUpperCase());
+    
+});
+
+ball.filter((ball)=> {
+    if (ball.includes('m')) {
+        console.log(ball.toUpperCase());
+        
+    }
+    console.log(ball.toUpperCase());
+    
+});
+
+
+const salaries = [33333333333333320, 33333333333330, 44444444440, 5222220, 6000009998880];
+// Update salary by 0.05%
+const increase =salaries.map(num => num * 1.0005);
+console.log(increase);
+
+        
+    </script>
+</body>
+</html>

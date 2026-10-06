@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Lorem ipsum dolor sit amet.</h1>
+        <p id="hint">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Hic alias eveniet eius at reprehenderit quasi.</p>
+        <a href="#" id="anc">Click Me</a>
+    </div>
+    <script>
+        ///Removing child element via parent node
+        let mainDiv = document.querySelector('#main');
+        let childele = document.querySelector('#hint');
+        mainDiv.removeChild(childele);
+
+        ///Removing child element via parent node
+        let ancChild = document.querySelector('#anc');
+        ancChild.parentNode.removeChild(ancChild);
+    </script>
+</body>
+</html>

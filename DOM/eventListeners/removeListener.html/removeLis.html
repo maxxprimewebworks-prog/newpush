@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Type sth" />
+    <input type="text" id="textInput2" placeholder="Type sth" />
+    <script>
+        //Select the input element
+const textInput = document.getElementById('textInput');
+const textInput2 = document.getElementById('textInput2');
+
+// Add a keydown event listener to the input element
+textInput.addEventListener('keydown', function(event) {
+    //Log the key that was pressed.
+    textInput.style.backgroundColor = 'lightgreen';
+    console.log(`Key pressed: ${event.key}`);
+});
+
+// Add a keyup event listener to the input element
+textInput2.removeEventListener('keydown', function(event)  {
+    //Log the key that was released
+    textInput2.style.backgroundColor = 'lightblue';
+    console.log(`Key released: ${event.key}`);
+})
+    </script>
+</body>
+</html>
